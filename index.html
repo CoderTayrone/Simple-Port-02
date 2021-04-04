@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/38590368?v=4" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <title>Simple Port</title>
 </head>
 <body>
@@ -144,6 +146,27 @@
         </div>
     </section>
   </div>
+
+    <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src="./img/project.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="./img/project.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="./img/project.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="./img/mus.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="./img/mus.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="./img/mus.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="./img/musix.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="./img/musix.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="./img/musix.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="./img/project.jpg" alt=""></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
     
     <section class="container_projects">
         <div class="card_project">
@@ -249,6 +272,26 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   </script>
 </body>
 </html>
