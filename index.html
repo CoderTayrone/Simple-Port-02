@@ -21,14 +21,14 @@
                 <p id="func">Developer Front-End</p>
             </div>
         </div>
-        <h4>Welcome to my Portfolio</h4>
+        <h4 style="padding-left: 18px;">Welcome to my Portfolio</h4>
         <p>
             Hello, I'm Tayrone. I'm 21 years old. 
             I am a Digital Product Designer with software education and later training in design and 3 years of experience. 
             I am currently working as a Digital Product Designer at Norma and also working on freelance jobs and side projects. 
             In my spare time, I try to improve myself on Webflow and SwiftUI.
         </p>
-        <a href="#">Contact me</a>
+        <a href="#" style="padding-left: 18px;">Contact me</a>
     </header>
     <section class="container-shared" data-aos="fade-down" data-aos-duration="1500"> 
         <div class="share-button">
@@ -164,8 +164,8 @@
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
     <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
   </div>
     
     <section class="container_projects">
@@ -189,7 +189,7 @@
         </div>
     </section>
     <section class="container_experiences">
-        <h2>Experiences</h2>
+        <h2 style="padding-left: 12px;">Experiences</h2>
         <div class="cards_experiences">
             <div class="card_experience">
                 <p>Norma</p>
@@ -278,19 +278,27 @@
    <!-- Initialize Swiper -->
    <script>
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 3,
-      loop: true,
-      loopFillGroupWithBlank: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      // init: false,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      }
     });
   </script>
 </body>

@@ -296,6 +296,7 @@ footer{
 }
 ul{
     display: flex;
+    flex-wrap: wrap;
 }
 ul li{
     margin-top: 12px;
@@ -325,14 +326,37 @@ li a:hover{
    .container-shared{
        display: none;
    }
+   .content_profile h4, p, a{
+       padding-left: 18px;
+   } 
 }
 @media (max-width: 480px){
     .container_services, .cards_experiences{
         display: grid;
         grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
     } 
+    .container_projects{
+        align-items: center;
+        justify-content: center;
+    }
     .section_tab_services{
         flex-direction: column;
+    }
+    .container_profile{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    ul{
+        margin-top: 12px;
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
     }
  }
 
