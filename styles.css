@@ -322,6 +322,8 @@ li a:hover{
        display: grid;
        grid-template-columns: repeat(2, 1fr);
        padding-left: 12px;
+       align-items: center;
+       justify-content: center;
    } 
    .container-shared{
        display: none;
@@ -334,9 +336,12 @@ li a:hover{
     .container_services, .cards_experiences{
         display: grid;
         grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
+        
     } 
+    .container_services{
+        justify-content: center;
+        align-items: center;
+    }
     .container_projects{
         align-items: center;
         justify-content: center;
