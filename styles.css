@@ -163,6 +163,7 @@ header a{
     font-size: 14px;
     line-height: 25px;
     color: #999999;
+    max-width: 280px;
 }
 .card_service a{
     text-decoration: underline;
@@ -313,21 +314,27 @@ li a:hover{
 
 /*Media Query*/
 
-@media (max-width: 480px){
-    .container_services, .cards_experiences{
-        display: grid;
-        grid-template-columns: 1fr;
-    } 
- }
+
 
 @media (max-width: 600px){
    .container_services, .cards_experiences{
        display: grid;
        grid-template-columns: repeat(2, 1fr);
        padding-left: 12px;
-
    } 
+   .container-shared{
+       display: none;
+   }
 }
+@media (max-width: 480px){
+    .container_services, .cards_experiences{
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+    .section_tab_services{
+        flex-direction: column;
+    }
+ }
 
 .section_tab_services{
     display: flex;
