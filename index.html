@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/38590368?v=4" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Simple Port</title>
+</head>
+<body>
+    <header>
+        <div class="container_profile">
+            <img src="https://avatars.githubusercontent.com/u/38590368?v=4" alt="">
+            <div class="content_profile">
+                <h1 id="user"></h1>
+                <p id="func">Developer Front-End</p>
+            </div>
+        </div>
+        <h4>Welcome to my Portfolio</h4>
+        <p>
+            Hello, I'm Tayrone. I'm 21 years old. 
+            I am a Digital Product Designer with software education and later training in design and 3 years of experience. 
+            I am currently working as a Digital Product Designer at Norma and also working on freelance jobs and side projects. 
+            In my spare time, I try to improve myself on Webflow and SwiftUI.
+        </p>
+        <a href="#">Contact me</a>
+    </header>
+    <section class="container-shared" data-aos="fade-down" data-aos-duration="1500"> 
+        <div class="share-button">
+            <span>Social Midia</span>
+            <a href="#" ><i class="fab fa-facebook-f"></i></a>
+            <a href="#" ><i class="fab fa-youtube"></i></a>
+            <a href="#" ><i class="fab fa-instagram"></i></a>
+            <a href="#" ><i class="fab fa-linkedin-in"></i></a>
+          </div>
+   </section> 
+    <!-- Tab links -->
+    <div class="section_tab_services">
+        <h2>Services</h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">HTML / CSS</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Javascript</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">React</button>
+         </div>
+    </div>
+  
+  <!-- Tab content -->
+  <div id="London" class="tabcontent">
+    <section class="container_services">
+        <div class="card_service">
+            <img src="./img/musix.jpg" alt="">
+            <h3>Musix</h3>
+            <p>Musix is concept side project that I developed on my free time. The biggest competitors are Spotify, Apple Music and Tidal.</p>
+            <a href="#">See all</a>
+        </div>
+        <div class="card_service">
+            <img src="./img/musix.jpg" alt="">
+            <h3>Businesswise</h3>
+            <p>
+                It was a project where I worked as a freelance interface designer for Businesswise. 
+                Businesswise's main goal is to gather podcasts in various categories for professional people.
+            </p>
+            <a href="#">See all</a>
+        </div>
+        <div class="card_service">
+            <img src="./img/musix.jpg" alt="">
+            <h3>Simple Scanner</h3>
+            <p>
+                Simple Scanner is an application we developed while I was working at Enrich Mobile. 
+                Simple Scanner is a PDF scanner application where you can scan your documents, 
+                convert them into PDF, sign your documents and send faxes. 
+            </p>
+            <a href="#">See all</a>
+        </div>
+    </section>
+  </div>
+  
+  <div id="Paris" class="tabcontent">
+    <section class="container_services">
+        <div class="card_service">
+            <img src="./img/mus.jpg" alt="">
+            <h3>Musix</h3>
+            <p>
+                Simple Scanner is an application we developed while I was working at Enrich Mobile. 
+                Simple Scanner is a PDF scanner application where you can scan your documents, 
+                convert them into PDF, sign your documents and send faxes. 
+            </p>
+            <a href="#">See all</a>
+        </div>
+        <div class="card_service">
+            <img src="./img/mus.jpg" alt="">
+            <h3>Musix</h3>
+            <p>
+                It was a project where I worked as a freelance interface designer for Businesswise. 
+                Businesswise's main goal is to gather podcasts in various categories for professional people.
+            </p>
+            <a href="#">See all</a>
+        </div>
+        <div class="card_service">
+            <img src="./img/mus.jpg" alt="">
+            <h3>Musix Scanner</h3>
+            <p>
+                It was a project where I worked as a freelance interface designer for Businesswise. 
+                Businesswise's main goal is to gather podcasts in various categories for professional people.
+            </p>
+            <a href="#">See all</a>
+        </div>
+    </section>
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+    <section class="container_services">
+        <div class="card_service">
+            <img src="./img/project.jpg" alt="">
+            <h3>Businesswise</h3>
+            <p>
+                Simple Scanner is an application we developed while I was working at Enrich Mobile. 
+                Simple Scanner is a PDF scanner application where you can scan your documents, 
+                convert them into PDF, sign your documents and send faxes. 
+            </p>
+            <a href="#">See all</a>
+        </div>
+        <div class="card_service">
+            <img src="./img/project.jpg" alt="">
+            <h3>Businesswise</h3>
+            <p>
+                It was a project where I worked as a freelance interface designer for Businesswise. 
+                Businesswise's main goal is to gather podcasts in various categories for professional people.
+            </p>
+            <a href="#">See all</a>
+        </div>
+        <div class="card_service">
+            <img src="./img/project.jpg" alt="">
+            <h3>Businesswise Scanner</h3>
+            <p>
+                Simple Scanner is an application we developed while I was working at Enrich Mobile. 
+                Simple Scanner is a PDF scanner application where you can scan your documents, 
+                convert them into PDF, sign your documents and send faxes. 
+            </p>
+            <a href="#">See all</a>
+        </div>
+    </section>
+  </div>
+    
+    <section class="container_projects">
+        <div class="card_project">
+            <img src="./img/project.jpg" alt="">
+        </div>
+        <div class="card_project">
+            <img src="./img/project.jpg" alt="">
+        </div>
+        <div class="card_project">
+            <img src="./img/project.jpg" alt="">
+        </div>
+        <div class="card_project">
+            <img src="./img/mus.jpg" alt="">
+        </div>
+        <div class="card_project">
+            <img src="./img/mus.jpg" alt="">
+        </div>
+        <div class="card_project">
+            <img src="./img/mus.jpg" alt="">
+        </div>
+    </section>
+    <section class="container_experiences">
+        <h2>Experiences</h2>
+        <div class="cards_experiences">
+            <div class="card_experience">
+                <p>Norma</p>
+                <p>Digital Product Designer</p>
+                <p>Mar 21 — Now</p>
+            </div>
+            <div class="card_experience">
+                <p>Enrich Mobile</p>
+                <p>UI Designer</p>
+                <p>Apr 2020 — Mar 21</p>
+            </div>
+            <div class="card_experience">
+                <p>ASDC</p>
+                <p>UI Designer</p>
+                <p>Jun 2020 — Mar 20</p>
+            </div>
+            <div class="card_experience">
+                <p>Talent Mondo</p>
+                <p>DContract UI Designer</p>
+                <p>Mar 20 — Jun 20</p>
+            </div>
+            <div class="card_experience">
+                <p>MobileUpp</p>
+                <p>iOS Developer & UI Designer</p>
+                <p>Mar 21 — Now</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-skills">
+        <p>HTML</p>
+        <div class="container">
+        <div class="skills html">90%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="container">
+        <div class="skills css">80%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="container">
+        <div class="skills js">65%</div>
+        </div>
+
+        <p>React</p>
+        <div class="container">
+        <div class="skills react">60%</div>
+        </div>
+    </section>
+
+    <section class="container_form">
+        <h2>Looking for help with design</h2>
+        <p>Send me detail</p>
+        <form>
+            <label for="">Name</label>
+            <input type="text">
+            <label for="">Email</label>
+            <input type="text">
+            <label for="">Message</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <div class="madeby">
+            Made by @codermundi
+        </div>
+        <div class="social-midia">
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
