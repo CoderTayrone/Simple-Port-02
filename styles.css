@@ -313,7 +313,7 @@ li a:hover{
 
 /*Media Query*/
 
-@media (max-width: 360px){
+@media (max-width: 480px){
     .container_services, .cards_experiences{
         display: grid;
         grid-template-columns: 1fr;
